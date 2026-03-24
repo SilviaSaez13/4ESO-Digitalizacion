@@ -1,4 +1,6 @@
-/* ── FUENTE ── */
+/* ── FUENTES ── */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
 @font-face {
   font-family: 'Minecraft';
   src: url('Minecraft-Tenv2.otf') format('opentype');
@@ -241,7 +243,8 @@ body {
   padding: 0.8rem 1.2rem;
   background: rgba(255,238,85,0.06);
   margin-bottom: 1.5rem;
-  font-size: clamp(0.75rem, 2vw, 0.95rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: var(--yellow);
   font-style: italic;
 }
@@ -264,7 +267,8 @@ body {
 }
 
 .bloque p {
-  font-size: clamp(0.65rem, 1.8vw, 0.82rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   line-height: 1.8;
   color: #dde;
   margin-bottom: 0.6rem;
@@ -276,7 +280,8 @@ body {
 }
 
 .bloque ul li {
-  font-size: clamp(0.65rem, 1.8vw, 0.82rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   line-height: 1.8;
   color: #dde;
   padding-left: 1.2rem;
@@ -295,7 +300,8 @@ body {
 .bloque table {
   width: 100%;
   border-collapse: collapse;
-  font-size: clamp(0.6rem, 1.6vw, 0.78rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.82rem, 1.8vw, 0.95rem);
   margin-top: 0.5rem;
 }
 
@@ -321,7 +327,8 @@ body {
   border-radius: 2px;
   padding: 1rem 1.2rem;
   margin-bottom: 1rem;
-  font-size: clamp(0.65rem, 1.8vw, 0.82rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   color: #ffaaaa;
   line-height: 1.8;
 }
@@ -339,7 +346,8 @@ body {
   border-radius: 2px;
   padding: 1rem 1.2rem;
   margin-bottom: 1rem;
-  font-size: clamp(0.65rem, 1.8vw, 0.82rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   color: #aaddee;
   line-height: 1.8;
 }
@@ -358,14 +366,16 @@ body {
 }
 
 .enlaces p {
-  font-size: clamp(0.6rem, 1.6vw, 0.75rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   color: #aab;
   margin-bottom: 0.4rem;
 }
 
 .enlaces a {
   display: block;
-  font-size: clamp(0.6rem, 1.6vw, 0.75rem);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   color: var(--sky);
   text-decoration: none;
   padding: 0.2rem 0;

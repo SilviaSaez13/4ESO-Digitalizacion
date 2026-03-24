@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mundo 1 · La ciudad digital segura</title>
+  <link rel="stylesheet" href="../estilos.css">
+  <style>
+    /* Colores específicos de los apartados del Mundo 1 */
+    .world-card.a1 {
+      background-color: #2a2a2a;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(138,138,138,0.15) 0px, rgba(138,138,138,0.15) 2px, transparent 2px, transparent 8px),
+        repeating-linear-gradient(-45deg, rgba(90,90,90,0.1) 0px, rgba(90,90,90,0.1) 2px, transparent 2px, transparent 8px);
+      border-color: #8a8a8a;
+    }
+    .world-card.a2 {
+      background-color: #2a1a0a;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(220,90,20,0.15) 0px, rgba(220,90,20,0.15) 2px, transparent 2px, transparent 8px),
+        repeating-linear-gradient(-45deg, rgba(180,60,0,0.1) 0px, rgba(180,60,0,0.1) 2px, transparent 2px, transparent 8px);
+      border-color: #dc5a14;
+    }
+    .world-card.a3 {
+      background-color: #1a0a2a;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(160,80,220,0.15) 0px, rgba(160,80,220,0.15) 2px, transparent 2px, transparent 8px),
+        repeating-linear-gradient(-45deg, rgba(100,40,160,0.1) 0px, rgba(100,40,160,0.1) 2px, transparent 2px, transparent 8px);
+      border-color: #a050dc;
+    }
+    .world-card.a4 {
+      background-color: #0a1a2a;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(40,120,200,0.15) 0px, rgba(40,120,200,0.15) 2px, transparent 2px, transparent 8px),
+        repeating-linear-gradient(-45deg, rgba(20,80,160,0.1) 0px, rgba(20,80,160,0.1) 2px, transparent 2px, transparent 8px);
+      border-color: #2878c8;
+    }
+    .world-card.a5 {
+      background-color: #2a1a0a;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(220,180,20,0.15) 0px, rgba(220,180,20,0.15) 2px, transparent 2px, transparent 8px),
+        repeating-linear-gradient(-45deg, rgba(180,140,0,0.1) 0px, rgba(180,140,0,0.1) 2px, transparent 2px, transparent 8px);
+      border-color: #dcb414;
+    }
 
+    /* Grid de 5 tarjetas: 2 arriba, 2 en medio, 1 centrada abajo */
+    .apartados-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 720px;
+    }
+
+    .apartados-grid .centrado {
+      grid-column: 1 / -1;
+      max-width: 340px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      .apartados-grid {
+        grid-template-columns: 1fr;
+      }
+      .apartados-grid .centrado {
+        grid-column: auto;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-title">
+    <h1>🛡️ La ciudad digital segura</h1>
+    <p>Mundo 1 · Digitalización 4º ESO</p>
+  </header>
+
+  <main class="apartados-grid">
+
+    <a class="world-card a1" href="apartado1.html">
+      <span class="world-number">Apartado 1</span>
+      <span class="world-icon">⚙️</span>
+      <div class="world-name">
+        <strong>Tus dispositivos</strong>
+        Protege lo que usas cada día
+      </div>
+    </a>
+
+    <a class="world-card a2" href="apartado2.html">
+      <span class="world-number">Apartado 2</span>
+      <span class="world-icon">🔑</span>
+      <div class="world-name">
+        <strong>Contraseñas</strong>
+        Tu primera línea de defensa
+      </div>
+    </a>
+
+    <a class="world-card a3" href="apartado3.html">
+      <span class="world-number">Apartado 3</span>
+      <span class="world-icon">👁️</span>
+      <div class="world-name">
+        <strong>Identidad digital</strong>
+        Tu huella en internet
+      </div>
+    </a>
+
+    <a class="world-card a4" href="apartado4.html">
+      <span class="world-number">Apartado 4</span>
+      <span class="world-icon">🔒</span>
+      <div class="world-name">
+        <strong>Privacidad y datos</strong>
+        Qué cedes y cómo protegerlo
+      </div>
+    </a>
+
+    <a class="world-card a5 centrado" href="apartado5.html">
+      <span class="world-number">Apartado 5</span>
+      <span class="world-icon">⚠️</span>
+      <div class="world-name">
+        <strong>Fraudes y engaños</strong>
+        Aprende a detectarlos
+      </div>
+    </a>
+
+  </main>
+
+  <nav class="nav-buttons">
+    <a class="nav-btn" href="../index.html">← Volver al inicio</a>
+  </nav>
+
+  <footer>
+    ⛏️ Minecraft Education · Digitalización · IES LA MOLA
+  </footer>
+
+</body>
+</html>

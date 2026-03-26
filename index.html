@@ -38,7 +38,8 @@ const bloques = [
       ]},
       { titulo:'Firma y trámites oficiales', temas:[
         { cod:'A5', nombre:'Firmar documentos online: qué es y cuándo se necesita' },
-        { cod:'A6', nombre:'Trámites con la administración y compras online seguras' },
+        { cod:'A6', nombre:'Trámites con la administración' },
+        { cod:'A7', nombre:'Formas de pago y criptomonedas' },
       ]}
     ]
   },
@@ -50,15 +51,16 @@ const bloques = [
       { titulo:'Tu huella digital', temas:[
         { cod:'B1', nombre:'Qué saben de ti en internet y cómo lo consiguen' },
         { cod:'B2', nombre:'Cómo configurar tu privacidad en redes sociales' },
+        { cod:'B3', nombre:'Tus datos personales y el RGPD: tus derechos online' },
       ]},
       { titulo:'Tu dispositivo', temas:[
-        { cod:'B3', nombre:'Cómo saber si tu móvil u ordenador está en peligro' },
-        { cod:'B4', nombre:'Qué hacer para mantenerlo protegido' },
-        { cod:'B5', nombre:'WiFi pública: cuándo sí y cuándo no' },
+        { cod:'B4', nombre:'Cómo saber si tu móvil u ordenador está en peligro' },
+        { cod:'B5', nombre:'Qué hacer para mantenerlo protegido' },
+        { cod:'B6', nombre:'WiFi pública: cuándo sí y cuándo no' },
       ]},
       { titulo:'Los fraudes', temas:[
-        { cod:'B6', nombre:'Te ha llegado algo sospechoso o alguien se ha hecho pasar por ti' },
-        { cod:'B7', nombre:'Me han engañado — ¿qué hago ahora?' },
+        { cod:'B7', nombre:'Te ha llegado algo sospechoso o alguien se ha hecho pasar por ti' },
+        { cod:'B8', nombre:'Me han engañado — ¿qué hago ahora?' },
       ]}
     ]
   },
@@ -176,7 +178,7 @@ const contenidos = {
     <a class="incibe-link" href="https://firmaelectronica.gob.es" target="_blank">⛏ Descargar AutoFirma →</a>
   `},
 
-  A6: { titulo:'Trámites con la administración y compras online seguras', html:`
+  A6: { titulo:'Trámites con la administración', html:`
     <p>Con Cl@ve o certificado digital puedes hacer casi cualquier trámite oficial sin salir de casa: solicitar becas, pedir el historial académico, consultar multas, registrar documentos... Todo desde la <strong>sede electrónica</strong> del organismo correspondiente.</p>
     <div class="ejemplo"><div class="ejemplo-label">Trámites que ya puedes hacer con 16 años</div>
     <p>Consultar tu historial clínico, pedir cita oficial, solicitar o renovar el DNI, acceder al expediente académico oficial, o registrar documentos en el Registro Civil.</p></div>
@@ -192,6 +194,24 @@ const contenidos = {
     <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/compras-seguras-online" target="_blank">⛏ Más info en INCIBE →</a>
   `},
 
+
+  A7: { titulo:'Formas de pago y criptomonedas', html:`
+    <p>Cuando compras online o haces un pago digital, el método que eliges determina el nivel de protección que tienes si algo sale mal. No todos los métodos son igual de seguros ni te ofrecen las mismas garantías.</p>
+    <div class="ejemplo"><div class="ejemplo-label">Los métodos más habituales</div>
+    <p><strong>Tarjeta de crédito/débito con 3D Secure</strong> — al pagar, el banco te pide confirmar la operación en la app o por SMS. Si te estafan, puedes reclamar al banco la devolución del cargo.<br>
+    <strong>PayPal</strong> — actúa como intermediario entre tú y la tienda. La tienda nunca ve tus datos bancarios, y tienes protección al comprador si el producto no llega o no es lo que pediste.<br>
+    <strong>Bizum</strong> — cómodo para pagos entre particulares, pero tiene menos protección en compras: si pagas a un estafador, es muy difícil recuperar el dinero.<br>
+    <strong>Transferencia bancaria</strong> — el método menos seguro para compras: si te estafan, el dinero no tiene vuelta atrás.</p></div>
+    <p>Las <strong>criptomonedas</strong> (Bitcoin, Ethereum...) son monedas digitales que funcionan sin bancos ni gobiernos como intermediarios. Usan tecnología blockchain para registrar las transacciones. Son descentralizadas — nadie las controla — y las transacciones son irreversibles: si envías dinero a un estafador, no puedes recuperarlo.</p>
+    <p>En la práctica, las criptomonedas se usan como inversión especulativa y, lamentablemente, también en muchas estafas online. Si alguien te pide que pagues en criptomonedas o que inviertas en ellas con promesas de beneficios rápidos, es casi siempre una señal de fraude.</p>
+    <div class="que-hacer"><div class="que-hacer-label">✔ Qué recordar</div><ol>
+      <li>Usa métodos con protección al comprador para compras online: tarjeta con 3D Secure o PayPal</li>
+      <li>Evita transferencias bancarias directas con desconocidos</li>
+      <li>Si alguien te pide pagar en criptomonedas, desconfía — es una señal de estafa frecuente</li>
+      <li>Nunca inviertas en criptomonedas por recomendación de alguien que conociste online</li>
+    </ol></div>
+    <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/compras-seguras-online/metodos-de-pago-seguros-al-comprar-online" target="_blank">⛏ Más info en INCIBE →</a>
+  `},
   B1: { titulo:'Qué saben de ti en internet y cómo lo consiguen', html:`
     <p>Cada vez que usas internet dejas un rastro: qué buscas, qué compras, dónde estás, con quién hablas, qué te gusta. A eso se le llama <strong>huella digital</strong>. No siempre eres consciente de lo que dejas, pero otros sí lo son.</p>
     <div class="ejemplo"><div class="ejemplo-label">Ejemplo real</div>
@@ -220,7 +240,24 @@ const contenidos = {
     <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/privacidad" target="_blank">⛏ Más info en INCIBE →</a>
   `},
 
-  B3: { titulo:'Cómo saber si tu móvil u ordenador está en peligro', html:`
+
+  B3: { titulo:'Tus datos personales y el RGPD: tus derechos online', html:`
+    <p>Cada vez que te registras en una app, aceptas las condiciones de uso de una red social o compras en una tienda online, estás cediendo datos personales. El <strong>RGPD</strong> (Reglamento General de Protección de Datos) es la ley europea que regula cómo las empresas pueden usar esos datos y qué derechos tienes tú sobre ellos.</p>
+    <div class="ejemplo"><div class="ejemplo-label">Ejemplo real</div>
+    <p>Cuando instalas una app nueva y aparece un aviso de cookies o una pantalla pidiendo permisos, eso es la empresa cumpliendo (o intentando cumplir) con el RGPD. Ese consentimiento tiene que ser libre, específico, informado e inequívoco — no puede haber casillas ya marcadas de antemano, ni letras pequeñas que oculten lo que aceptas.</p></div>
+    <p>En España, a partir de los <strong>14 años</strong> puedes dar tu propio consentimiento para el tratamiento de tus datos. Por debajo de esa edad, son los padres o tutores quienes deben autorizarlo.</p>
+    <p>El RGPD te reconoce varios derechos concretos que puedes ejercer ante cualquier empresa:</p>
+    <div class="que-hacer"><div class="que-hacer-label">✔ Tus derechos según el RGPD</div><ol>
+      <li><strong>Acceso</strong> — puedes pedir a cualquier empresa qué datos tuyos tiene guardados</li>
+      <li><strong>Rectificación</strong> — puedes pedir que corrijan datos incorrectos</li>
+      <li><strong>Supresión o derecho al olvido</strong> — puedes pedir que borren tus datos si ya no son necesarios</li>
+      <li><strong>Oposición</strong> — puedes negarte a que usen tus datos para publicidad o perfiles de usuario</li>
+      <li><strong>Portabilidad</strong> — puedes pedir que te entreguen tus datos en un formato que puedas llevarte a otro servicio</li>
+    </ol></div>
+    <p>Si una empresa no respeta tus derechos, puedes reclamar ante la <strong>AEPD</strong> (Agencia Española de Protección de Datos) en aepd.es.</p>
+    <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/privacidad" target="_blank">⛏ Más info en INCIBE →</a>
+  `},
+  B4: { titulo:'Cómo saber si tu móvil u ordenador está en peligro', html:`
     <p>Los programas maliciosos no siempre son visibles. Muchos están diseñados para pasar desapercibidos mientras roban datos o espían tu actividad. Pero suelen dejar señales.</p>
     <div class="ejemplo"><div class="ejemplo-label">Señales de alerta</div>
     <p>El dispositivo va mucho más lento, la batería se agota muy rápido, aparecen apps que no has instalado, el móvil se calienta sin que lo estés usando, o ves cargos en tu tarjeta que no reconoces.</p></div>
@@ -234,7 +271,7 @@ const contenidos = {
     <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/virus-amenazas" target="_blank">⛏ Más info en INCIBE →</a>
   `},
 
-  B4: { titulo:'Qué hacer para mantener tu dispositivo protegido', html:`
+  B5: { titulo:'Qué hacer para mantener tu dispositivo protegido', html:`
     <p>Proteger tu dispositivo no requiere ser experto. La mayoría de los ataques aprovechan descuidos básicos que se evitan con hábitos sencillos.</p>
     <div class="ejemplo"><div class="ejemplo-label">El error más común</div>
     <p>Ignorar las actualizaciones del sistema. Cuando el móvil te avisa de una actualización, muchas personas la posponen indefinidamente. Esas actualizaciones corrigen vulnerabilidades conocidas que los atacantes explotan activamente.</p></div>
@@ -248,7 +285,7 @@ const contenidos = {
     <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/virus-amenazas" target="_blank">⛏ Más info en INCIBE →</a>
   `},
 
-  B5: { titulo:'WiFi pública: cuándo sí y cuándo no', html:`
+  B6: { titulo:'WiFi pública: cuándo sí y cuándo no', html:`
     <p>Las redes WiFi públicas son cómodas pero arriesgadas. Al conectarte, otros usuarios en esa misma red podrían interceptar tu tráfico si no va cifrado correctamente.</p>
     <div class="ejemplo"><div class="ejemplo-label">Ejemplo real</div>
     <p>Te conectas al WiFi de un centro comercial. Alguien en esa misma red, con un programa sencillo, puede ver qué webs visitas y capturar datos que envías si la web no está bien protegida.</p></div>
@@ -262,7 +299,7 @@ const contenidos = {
     <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/virus-amenazas" target="_blank">⛏ Más info en INCIBE →</a>
   `},
 
-  B6: { titulo:'Te ha llegado algo sospechoso o alguien se ha hecho pasar por ti', html:`
+  B7: { titulo:'Te ha llegado algo sospechoso o alguien se ha hecho pasar por ti', html:`
     <p>Cuando alguien te manda un mensaje haciéndose pasar por tu banco, por Correos o por cualquier empresa para robarte datos o dinero, eso se llama <strong>phishing</strong>. Si llega por SMS se llama <strong>smishing</strong>, y si es por llamada, <strong>vishing</strong>. La táctica es siempre la misma: crear urgencia o miedo para que actúes sin pensar.</p>
     <div class="ejemplo"><div class="ejemplo-label">Situaciones reales</div>
     <p>Recibes un SMS de "tu banco" diciendo que tu cuenta ha sido bloqueada y que pulses un enlace. El enlace lleva a una web idéntica pero falsa. O te llaman diciendo ser de Microsoft y que tu ordenador tiene un virus — te piden acceso remoto para "arreglarlo".</p></div>
@@ -277,7 +314,7 @@ const contenidos = {
     <a class="incibe-link" href="https://www.incibe.es/ciudadania/tematicas/ingenieria-social-fraudes-online/phishing" target="_blank">⛏ Más info en INCIBE →</a>
   `},
 
-  B7: { titulo:'Me han engañado — ¿qué hago ahora?', html:`
+  B8: { titulo:'Me han engañado — ¿qué hago ahora?', html:`
     <p>Si has caído en una estafa online, lo primero es no entrar en pánico. Hay pasos concretos que puedes dar para minimizar el daño. Cuanto antes actúes, mejor.</p>
     <div class="ejemplo"><div class="ejemplo-label">Ejemplo real</div>
     <p>Has introducido tu contraseña del banco en una web falsa. O has pagado en una tienda online que resultó ser fraudulenta y el producto nunca llegó.</p></div>
